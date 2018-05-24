@@ -16,7 +16,6 @@ picture { margin: 0 0 .2rem 2%; width:33%; }
   }
   
 
-section.forecast { display:none; }
 
 header {
 font-family: Impact, Charcoal, sans-serif;
@@ -65,8 +64,18 @@ main figure img {margin: 0 0 .2rem 2%; width:96%;
 }
 
 article { 
-text-align: left;
-margin: 0 0 .2rem 2%; width:96%; 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+article h3{ 
+        text-align: center;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article p { 
+        text-align: left;
+	margin: 0 0 .2rem 2%; width:96%; 
 }
 
 picture {

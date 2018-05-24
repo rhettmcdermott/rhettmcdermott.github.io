@@ -56,9 +56,21 @@ main figure img {
 }
 
 article { 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+article h3{ 
+        text-align: center;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article p { 
         text-align: left;
 	margin: 0 0 .2rem 2%; width:96%; 
 }
+
+
 
 picture {
 	margin:auto; width:33%; 
