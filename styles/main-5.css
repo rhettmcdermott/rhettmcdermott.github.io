@@ -13,6 +13,10 @@ header, nav, main, footer {
 
 section.forecast { display:none; }
 
+toppicture {
+	margin: 0 0 .2rem 2%; width:96%;
+}
+
 header {
 font-family: Impact, Charcoal, sans-serif;
 margin: 0 0 .2rem 2%; width:96%; 
@@ -20,41 +24,81 @@ margin: 0 0 .2rem 2%; width:96%;
 header h1 {
 font-family: Impact, Charcoal, sans-serif;
 margin: 0 0 .2rem 2%; width:96%; 
-
 }
-header img {margin: 0 0 .2rem 2%; width:96%; 
-}
-header .subheading {margin: 0 0 .2rem 2%; width:96%; 
-}
-
- 
-main {margin: 0 0 .2rem 2%; width:96%; }
-main h2 {
-font-family: Impact, Charcoal, sans-serif;
-margin: 0 0 .2rem 2%; width:96%;
-}
-main figure { margin: 0 0 .2rem 2%; width:96%; 
-}
-main figure img {margin: 0 0 .2rem 2%; width:96%; 
-}
-
-article { 
+header h2 {
 margin: 0 0 .2rem 2%; width:96%; 
 }
 
-picture { 
-margin: 0 0 .2rem 2%; width:33%; 
+header img {
+float: left;
+margin: 0 0 .2rem 2%; width:16%; 
+}
+header .subheading {
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+ 
+main {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+main h2 {
+font-family: Impact, Charcoal, sans-serif;
+	margin: 0 0 .2rem 2%; width:96%;
+}
+main figure { 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img {
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article { 
+        text-align: left;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+picture {
+	margin:auto; width:33%; 
+	float: right;
+}
+
+span {
+	margin:auto; width:33%; 
+	float: left;
 }
 
 footer {
-margin: 0 0 .2rem 2%; width:33%; 
+	margin: 0 0 .2rem 2%; width:96%; 
+	background-color: #999;
 }
 
+ 
+.contact {
+   text-align: center;
+   background-color: #555;
+}
+
+.footer-bar {
+   text-align: center;
+   background-color: #999;
+   display: flex;
+}
+
+.current {
+   display: flex;
+}
+
+
+
 ul {
+    border: 1px solid #555;
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    width: 200px;
+    width: 96%;
     background-color: #999;
 }
 
@@ -64,6 +108,8 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
     color: white;
+    border-bottom: 1px solid #555;
+    text-align: center;
 }
 
 li a.active {
@@ -91,11 +137,7 @@ th {
     height: 50px;
 }
 
-.current {
-text-align: center;
-   display: flex;
-   align-items:center;
-}
+
 
 
 }

@@ -1,14 +1,9 @@
 @media only screen and (min-width: 37.5em) {
 
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
     
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-    
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
-    
-    
- header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 800px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+ header, nav, main, footer { 
+  max-width: 800px; 
 }   
 
 main figure { margin: 0 0 .2rem 2%; width:96%; }
@@ -17,9 +12,97 @@ picture { margin: 0 0 .2rem 2%; width:33%; }
     
     body {
       font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
   }
   
+
+section.forecast { display:none; }
+
+header {
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h1 {
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h2 {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+header img {
+float: left;
+margin: 0 0 .2rem 2%; width:16%; 
+}
+header .subheading {
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+ 
+main {
+margin: 0 0 .2rem 2%; width:96%;
+}
+main h2 {
+text-align: center;
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%;
+}
+main h3 {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%;
+}
+main p {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img {margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article { 
+text-align: left;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+picture {
+	margin:auto; width:33%; 
+	float: right;
+}
+
+span {
+	margin:auto; width:33%; 
+	float: left;
+}
+
+footer {
+	margin: 0 0 .2rem 2%; width:96%; 
+	background-color: #999;
+}
+
+ 
+.contact {
+   text-align: center;
+   background-color: #555;
+}
+
+.footer-bar {
+   text-align: center;
+   background-color: #999;
+   display: flex;
+}
+
+.current {
+   display: flex;
+}  
+  
+  
   ul {
+      border: 1px solid #555;
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -32,6 +115,7 @@ picture { margin: 0 0 .2rem 2%; width:33%; }
   
   li {
       float: left;
+      border-right:1px solid #555;
   }
   
   li a {
@@ -40,6 +124,7 @@ picture { margin: 0 0 .2rem 2%; width:33%; }
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+       
   }
   
   li a:hover {
@@ -64,11 +149,7 @@ th {
     height: 50px;
 }
 
-.current {
-text-align: center;
-   display: flex;
-   align-items:center;
-}
+
     
 
   }
