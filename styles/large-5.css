@@ -1,0 +1,74 @@
+@media only screen and (min-width: 64em) {
+
+header, nav, main, footer { 
+  max-width: 800px; 
+}
+ 
+    
+main figure { margin: 0 0 .2rem 2%; width:96%; }    
+article { margin: 0 0 .2rem 2%; width:96%; }
+picture { margin: 0 0 .2rem 2%; width:33%; }
+
+ body {
+      font-size: 28px;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #999;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+  }
+  
+  li {
+      float: left;
+  }
+  
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+  li a:hover {
+      background-color: #111;
+  }
+  
+  .active {
+      background-color: #4CAF50;
+}
+
+
+
+
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+.current {
+text-align: center;
+   display: flex;
+   align-items:center;
+}
+
+    
+  
+  }
+  
+ 
