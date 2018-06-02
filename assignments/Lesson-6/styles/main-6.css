@@ -1,0 +1,200 @@
+
+@media only screen and (max-width: 37.4em) {
+
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, main, footer {
+  max-width: 400px;
+}
+
+section.forecast { display:none; }
+
+
+picture {
+margin: 0 0 .2rem 2%; width:96%;
+}
+
+
+header {
+font-family: 'Bowlby One SC', cursive;
+/*font-family: Impact, Charcoal, sans-serif;*/
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h1 {
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h2 {
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+header img {
+float: left;
+margin: 0 0 .2rem 2%; width:16%; 
+}
+header .subheading {
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+ 
+main {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+main h2 {
+font-family: Impact, Charcoal, sans-serif;
+	margin: 0 0 .2rem 2%; width:96%;
+}
+main figure { 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img {
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article { 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+article h3{ 
+        text-align: center;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article p { 
+        text-align: left;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+
+main picture {
+	margin:auto; width:33%; 
+	float: right;
+}
+
+span {
+	margin:auto; width:33%; 
+	float: left;
+}
+
+footer {
+	margin: 0 0 .2rem 2%; width:96%; 
+	background-color: #999;
+}
+
+ 
+.contact {
+   text-align: center;
+   background-color: #555;
+}
+
+.footer-bar {
+   text-align: center;
+   background-color: #999;
+   display: flex;
+}
+
+.current {
+   display: flex;
+}
+
+
+
+ul {
+    border: 1px solid #555;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 96%;
+    background-color: #999;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #66b3ba;
+    color: white;
+}
+
+
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+
+
+
+
+
+
+* {margin:0}
+ 
+h1 { margin-left: .75rem;	padding: .5rem; }
+.hamburger { display: block;position: absolute;top: 3.0rem;right: 1.25rem; }
+
+.navigation { list-style: none; padding-left: 0; }
+.navigation li { display: none; }
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+@media only screen and (max-width: 37.4em) {
+	.navigation.responsive { position: relative; }
+	.navigation.responsive li { background-color: #66b3ba;	display: block;	width: 100%; margin: 1px 0;	border: 1px solid #ddd; }
+	.navigation.responsive li a {	padding: .5rem; text-align: center;	display: block; text-decoration:none; }
+	.navigation.responsive li a:hover { background-color: #42cafd; }
+}
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+
+@media only screen and (min-width: 37.4em) {
+	header,	nav {	margin: 0 auto;	max-width: 600px;	}
+	h1 { text-align: center; }
+	.hamburger { display: none;	}
+	.navigation {	background-color: #333;	overflow: hidden;	text-align: center;	}
+	.navigation li { display: inline-block; margin-left: .25rem; }
+	.navigation a {	display: block;	color: #eee;	padding: .5rem;	text-align: center;	text-decoration: none;}
+	.navigation a:hover {	color: #000; background-color: #777;	}
+}
+
+}

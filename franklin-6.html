@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Franklin Page - Weather Forecast On Demand">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-6.css">
+	<link rel="stylesheet" href="styles/medium-6.css">
+	<link rel="stylesheet" href="styles/large-6.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+
+<title>Franklin City - Weather Forecast On Demand</title>
+
+
+
+
+</head>
+<body>
+
+
+  <header>
+  <img src="../../images/icon.png" width=50% height=50% alt="icon">
+   <h1>Weather Forecast On Demand</h1>
+   <!--Motto-->
+ <div class="subheading"><h2>"Weather right when you need it."</h2></div>
+
+
+
+<script src="js/hamburgermenu.js"></script>
+	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+</header>
+
+
+
+<picture>
+<img src="images/medium.jpg",
+    srcset="images/small.jpg 500w,
+            images/medium.jpg 1000w,
+            images/large.jpg 2000w"
+    sizes="100vw">
+</picture>
+
+
+
+<nav>
+ <ul class="navigation">
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/home.html">Home</a></li>
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/franklin.html">Franklin</a></li>
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/greenville.html">Greenville</a></li>
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/springfield.html">Springfield</a></li>
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/stormcenter.html">Storm Center</a></li>
+ <li><a href="https://rhettmcdermott.github.io/assignments/lesson-4/gallery.html">Gallery</a></li>
+ </ul>
+</nav>
+
+  <main>
+    <h2>Franklin</h2>
+    <figure>
+
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>
+      <div class="highlow">
+        <p>High: 90&deg;F</p>
+        <p>Low: 66&deg;F</p>
+      </div>
+      <div class="current">
+      <span id="">Sunny</span>
+        <picture>
+            <img src="../../images/sunny.jpg" width=100% height=100% alt="Sunny">
+        </picture>
+      </div>
+      <div class="conditions">
+        <p>Precipitation: 0%</p>
+        <p>Wind Speed: 5 mph SW</p>
+      </div>
+    </section>
+
+
+
+
+    <section class="forecast">
+    <table>
+      <tr><th><h3>Ten Day Forecast</h3></th></tr>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+
+
+
+    <article>
+      <h3>Franklin Breaks Record</h3>
+      <img src="../../images/images1.jpg" width=100% height=100% alt="clear day">
+      <p class="town-article">
+
+      Tropical moisture will surge northward late this week and into the Memorial Day weekend, contributing to heavy rainfall along parts of the Gulf Coast and in the Southeast, as we also watch the Gulf of Mexico for possible subtropical or tropical development.
+	  This surge of deep, tropical moisture will be associated with a very broad area of low pressure, currently centered near the peninsula, and a swirl of low pressure in the upper atmosphere. These features will draw this moisture plume northward from the tropics, across Cuba and into the southeastern United States.
+	  The National Hurricane Center (NHC) has dubbed this low-pressure system Invest 90L, which is a naming convention used by the NHC to identify features it is monitoring for potential future development into a tropical depression or storm.
+
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+ <h3>William McDermott</h3>
+ <p>rhettmcdermott@gmail.com</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Forecast On Demand | <span id="todaysdate"></span>
+    </section>
+  </footer>
+
+<script src="js/currentdate.js"></script>
+</body>
+</html>
