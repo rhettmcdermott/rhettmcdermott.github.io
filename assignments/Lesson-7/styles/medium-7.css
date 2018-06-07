@@ -1,0 +1,216 @@
+@media only screen and (min-width: 37.5em) {
+
+
+    
+ header, nav, main, footer { 
+  max-width: 800px; 
+}   
+
+article { 
+margin: 0 0 .2rem 2%; width:96%; 
+}
+picture { 
+margin: 0 0 .2rem 2%; width:33%; 
+}
+    
+    body {
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+picture {
+margin: 0 0 .2rem 2%; width:96%;
+}
+
+
+header {
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h1 {
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+header h2 {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+header img {
+float: left;
+margin: 0 0 .2rem 2%; width:16%; 
+}
+header .subheading {
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+ 
+main {
+margin: 0 0 .2rem 2%; width:96%;
+}
+main h2 {
+text-align: center;
+font-family: Impact, Charcoal, sans-serif;
+margin: 0 0 .2rem 2%; width:96%;
+}
+main h3 {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%;
+}
+main p {
+text-align: center;
+margin: 0 0 .2rem 2%; width:96%;
+}
+
+main figure { 
+margin: 0 0 .2rem 2%; width:96%; 
+}
+main figure img {
+margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+.gallerytitle {
+    color: #000000;
+    font-size: xx-large;
+    text-shadow: .5px .5px 1.5px #c0c0c0;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+
+div.gallery {
+	padding: 0 0;
+	display: grid;
+  	grid-template-columns: repeat(2, 50%);
+}
+div.gallery figure {
+	margin: 2rem 0; 
+	border: 1px solid #aaa;
+}
+div.gallery figure img {
+	width: 100%;
+   	margin-left: auto;
+    	margin-right: auto;
+    	}
+div.gallery figure imagetext {
+text-align: center; 
+font-size: .8rem;
+}
+
+div.gallery figure:hover {
+		box-shadow: 9px 9px 11px gray;
+	}
+	
+
+article { 
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+
+article h3{ 
+        text-align: center;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+article p { 
+        text-align: left;
+	margin: 0 0 .2rem 2%; width:96%; 
+}
+
+main picture {
+	margin:auto; width:33%; 
+	float: right;
+}
+
+span {
+	margin:auto; width:33%; 
+	float: left;
+}
+
+footer {
+	margin: 0 0 .2rem 2%; width:96%; 
+	background-color: #999;
+}
+
+ 
+.contact {
+   text-align: center;
+   background-color: #555;
+}
+
+.footer-bar {
+   text-align: center;
+   background-color: #999;
+   display: flex;
+}
+
+.current {
+   display: flex;
+}  
+  
+  
+nav ul {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+      border: 2px solid #555;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #66b3ba;
+      top: 0;
+      margin: 0 0 .2rem 2%; width:99%;
+  }
+  
+nav  li {
+       
+      border-left:2px solid #555;
+      border-right:0px;
+  }
+  
+nav  li a {
+	display: flex;
+	color: white;
+	text-align: center;
+	padding: 4px 7px;
+       
+  }
+  
+nav  li a:hover {
+      background-color: #42cafd;
+  }
+  
+nav  .active {
+      background-color: #4CAF50;
+}
+
+.navigation { 
+}
+
+
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+ 
+.hamburger { display: none; }
+
+    
+
+  }
+  
+ 
