@@ -23,6 +23,7 @@ margin: 0 0 .2rem 2%; width:96%;
 header {
 font-family: Impact, Charcoal, sans-serif;
 margin: 0 0 .2rem 2%; width:96%; 
+text-shadow: 1.5px 1.5px 2.5px gray;
 }
 header h1 {
 font-family: Impact, Charcoal, sans-serif;
@@ -31,6 +32,7 @@ margin: 0 0 .2rem 2%; width:96%;
 header h2 {
 font-family: Arial, Helvetica, sans-serif;
 margin: 0 0 .2rem 2%; width:96%; 
+font-size: 18px;
 }
 
 header img {
