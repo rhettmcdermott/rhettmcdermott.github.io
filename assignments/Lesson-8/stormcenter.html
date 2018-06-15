@@ -43,57 +43,58 @@
 </nav>
 
   <main>
-   <h1 class="bosc">Storm Center</h1>
-               <form id="stormdata"  method="post" name="stormcenter" action="php/thanks.php">
-               <fieldset>
-               <legend> Personal Information </legend>
-                   <span class="info" id="ratingvalue">Full Name:</span><br><input class="info" name="fullname" type="text" value="" placeholder="Enter Full Name" pattern="[a-zA-Z -._]{5,99}" required><br>
-                   <span class="info" id="ratingvalue">Email:</span><br><input class="info" name="email" type="email" value="" placeholder="Enter Email" required><br>
-                   <span class="info" id="ratingvalue">Phone:</span><br><input class="info" name="phone" type="tel" value="" placeholder="Enter Phone Number" pattern="[0-9]{10}" required><br>
-                   <span class="info" id="ratingvalue">Zip Code:</span><br><input class="info" name="zipcode" type="number" placeholder="Enter Zip Code" required>
-               </fieldset>
-               <fieldset>
-                   <legend>Storm Information</legend>
-                   <label class="info"> Storm Date:</label>
-                   <input class="sdate" name="sdate" type="date" required>
-                   <label class="info">Storm Type:</label>
-                   <input class="storminfo" type="text" name="stormlist" list="stormlist">
-                   <datalist id="stormlist">
-                       <option value="Flash Flood">
-                       <option value="Hail">
-                       <option value="Hurricane">
-                       <option value="Thunderstorm">
-                       <option value="Tornado">
-                   </datalist>
+   <h1 class="Titletext">Storm Center</h1>
+	<form id="stormdata"  method="post" name="stormcenter" action="php/thanks.php">
+		<fieldset>
+			<legend> Personal Information </legend>
+		    <span class="info">Full Name:</span><br><input class="info" name="fullname" type="text" value="" placeholder="Enter Full Name" pattern="[a-zA-Z -._]{5,99}" required><br>
+		    <span class="info">Email:</span><br><input class="info" name="email" type="email" value="" placeholder="Enter Email" required><br>
+		    <span class="info">Phone:</span><br><input class="info" name="phone" type="tel" value="" placeholder="Enter Phone Number" pattern="[0-9]{10}" required><br>
+		    <span class="info">Zip Code:</span><br><input class="info" name="zipcode" type="number" placeholder="Enter Zip Code" required>
+		</fieldset>
+		<fieldset>
+		    <legend>Storm Information</legend>
+		    <label class="info"> Storm Date:</label>
+		    <input class="sdate" name="sdate" type="date" required>
+		    <label class="info">Storm Type:</label>
+		    <input class="storminfo" type="text" name="stormlist" list="stormlist">
+		    <datalist id="stormlist">
+		        <option value="Flash Flood">
+		        <option value="Hail">
+		        <option value="Hurricane">
+		        <option value="Thunderstorm">
+		        <option value="Tornado">
+		    </datalist>
 
 
-                   <label class="info" for="rating"> Severity (1 to 10): </label>
-                   <input class="stinfo" type="range" id="rating" value="5" min="1" max="10" step="0.5"
-                   oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                   <span id="ratingvalue">5</span>
 
-                   <br>
-                   <label class="info"> Storm Region: </label>
-                   <input class="storminfo" type="text" name="stormRegion" list="regions" placeholder="Enter Region">
-                   <datalist id="regions">
-                       <option value="Franklin">
-                       <option value="Greenville">
-                       <option value="Springfield">
-                   </datalist>
-                   </fieldset>
-                   <fieldset>
-                   <legend>Tell If You Are In Danger</legend>
-                   <br>
+		    <label class="info" for="rating"> Severity (1 to 10): </label>
+		    <input class="stinfo" type="range" id="rating" value="5" min="1" max="10" step="1"
+		    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		    <span id="ratingvalue">5</span>
+
+		    <br>
+		    <label class="info"> Storm Region: </label>
+		    <input class="storminfo" type="text" name="stormRegion" list="regions" placeholder="Enter Region">
+		    <datalist id="regions">
+		        <option value="Franklin">
+		        <option value="Greenville">
+		        <option value="Springfield">
+		    </datalist>
+		</fieldset>
+		<fieldset>
+		    <legend>Tell If You Are In Danger</legend>
+		    <br>
 
 
-                   <input class="stinfo" type="radio" name="UserInDanger" value="yes"> Yes<br>
-                   <input class="stinfo" type="radio" name="UserInDanger" value="maybe"> Maybe<br>
-                   <input class="stinfo" type="radio" name="UserInDanger" value="no"> No<br>
-                   <br>
-                   <textarea class="storminfo" rows="5" cols="50" name="comment" placeholder="Enter any additional information that you may have."></textarea>
-                   </fieldset>
-                   <input type="submit" value="SUBMIT" class="submitBtn">
-        </form>
+		    <input class="stinfo" type="radio" name="UserInDanger" value="yes"> Yes<br>
+		    <input class="stinfo" type="radio" name="UserInDanger" value="maybe"> Maybe<br>
+		    <input class="stinfo" type="radio" name="UserInDanger" value="no"> No<br>
+		    <br>
+		    <textarea class="storminfo" rows="5" cols="50" name="comment" placeholder="Enter any additional information that you may have."></textarea>
+		</fieldset>
+		    <input type="submit" value="SUBMIT" class="submitBtn">
+    </form>
 
   </main>
 
@@ -106,7 +107,7 @@
     </section>
   </footer>
 <script type="text/javascript" src="js/windchill.js"></script>
-<script src="js/currentdate.js"></script>
-<script type="text/javascript" src="js/stormseverity.js" async></script>
+<script type="text/javascript" src="js/currentdate.js"></script>
+<script type="text/javascript" src="js/stormseverity.js"></script>
 </body>
 </html>
