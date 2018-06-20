@@ -164,7 +164,7 @@ nav ul {
     	margin: auto;
     	padding: 0;
     	width: 96%;
-    	background-color: #00b359;
+    	background-color: #555;
 }
 
 nav li a {
@@ -176,6 +176,7 @@ nav li a {
     	border-bottom: 1px solid #555;
     	text-align: center;
     	text-decoration: none;
+    	background-color: #00b359;
 }
 
 nav li a.active {
@@ -184,7 +185,7 @@ nav li a.active {
 }
 
 nav li a:hover:not(.active) {
-    	background-color: #66b3ba;
+    	background-color: #00b359;
     	color: white;
 }
 
