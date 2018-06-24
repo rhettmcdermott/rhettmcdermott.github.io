@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Franklin Page - Weather Forecast On Demand">
+    	<link rel="stylesheet" href="styles/normalize.css">
+    	<link rel="stylesheet" href="styles/main-9.css">
+		<link rel="stylesheet" href="styles/medium-9.css">
+		<link rel="stylesheet" href="styles/large-9.css">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<title>Storm Center - Weather Forecast On Demand</title>
+	</head>
+	<body>
+
+	<header>
+
+</header>
+
+
+
+
+
+<nav>
+ <ul class="navigation">
+ <li><a href="https://rhettmcdermott.github.io/index-9.html">Home</a></li>
+ <li><a href="https://rhettmcdermott.github.io/franklin-8.html">Franklin</a></li>
+ <li><a href="https://rhettmcdermott.github.io/greenville.html">Greenville</a></li>
+ <li><a href="https://rhettmcdermott.github.io/springfield.html">Springfield</a></li>
+ <li><a href="https://rhettmcdermott.github.io/stormcenter-8.html">Storm Center</a></li>
+ <li><a href="https://rhettmcdermott.github.io/gallery-8.html">Gallery</a></li>
+ </ul>
+</nav>
+
+
+
+
+      <header2>
+
+      </header2>
+
+      <section>
+
+      </section>
+
+    <script>
+
+
+
+
+    var header = document.querySelector('header2');
+    var section = document.querySelector('section');
+
+
+
+//======================
+
+
+//Step 1
+var requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=4156210&appid=7c4e64ab25a2756c9149f6ae1e8117bf';
+
+//Step 2
+var request = new XMLHttpRequest();
+
+//Step 3
+request.open('GET', requestURL);
+
+//Step 4
+request.responseType = 'json';
+request.send();
+
+//Step 5
+request.onload = function() {
+  var weatherData = request.response;
+
+  showweatherData(weatherData);
+
+
+}
+
+
+function showweatherData(jsonObj) {
+
+
+
+var myArticle = document.createElement('article');
+var temp = jsonObj['main']['temp'];
+var weather = jsonObj['weather'][0]['description'];
+var temp_max = jsonObj['main']['temp_max'];
+var temp_min = jsonObj['main']['temp_min'];
+var speed = jsonObj['wind']['speed'];
+var icon = jsonObj['weather'][0]['icon'];
+
+
+
+var myArticle2 = document.createElement('article');
+      var myPara4 = document.createElement('p');
+      var myPara5 = document.createElement('p');
+      var myPara6 = document.createElement('p');
+      var myPara7 = document.createElement('p');
+      var myPara8 = document.createElement('p');
+      var myPara9 = document.createElement('p');
+
+
+  myPara4.textContent = 'Current temperature: ' + temp;
+  myPara5.textContent = 'current weather description: ' + weather;
+  myPara6.textContent = 'high temp: ' + temp_max;
+  myPara7.textContent = 'low temp: ' + temp_min;
+  myPara8.textContent = 'wind speed: ' + speed;
+  myPara9.textContent = 'current weather icon: ' + icon;
+
+  myArticle.appendChild(myPara4);
+  myArticle.appendChild(myPara5);
+  myArticle.appendChild(myPara6);
+  myArticle.appendChild(myPara7);
+  myArticle.appendChild(myPara8);
+  myArticle.appendChild(myPara9);
+
+  section.appendChild(myArticle);
+}
+
+
+
+</script>
+
+
+<!--
+current temperature
+current weather description
+high temp
+low temp
+wind speed
+current weather icon - weather icon key
+-->
+
+
+
+</body>
+</html>
