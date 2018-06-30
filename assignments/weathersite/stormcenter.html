@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Franklin Page - Weather Forecast On Demand">
+    	<link rel="stylesheet" href="styles/normalize.css">
+    	<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/medium.css">
+		<link rel="stylesheet" href="styles/large.css">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<title>Storm Center - Weather Forecast On Demand</title>
+	</head>
+	<body>
+
+
+ 	<header class="logo">
+   <img src="../../images/icon.png" alt="icon">
+    <h1>Weather Forecast On Demand</h1>
+  <h3 class="motto">"Weather right when you need it."</h3>
+
+
+
+ <script src="js/hamburgermenu.js"></script>
+
+ </header>
+<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+             <div class="photoFullWidth"> <img src="images/medium.jpg",
+     srcset="images/small.jpg 500w,
+             images/medium.jpg 900w,
+             images/large.jpg 2500w"
+     sizes="100vw"></div>
+
+
+
+
+<nav>
+ <ul class="navigation">
+ <li><a href="weathersite.html">Home</a></li>
+ <li><a href="franklin.html">Franklin</a></li>
+ <li><a href="greenville.html">Greenville</a></li>
+ <li><a href="springfield.html">Springfield</a></li>
+ <li><a href="stormcenter.html" class="selected">Storm Center</a></li>
+ <li><a href="gallery.html">Gallery</a></li>
+ </ul>
+</nav>
+
+  <main>
+   <h1 class="Titletext">Storm Center</h1>
+	<form id="stormdata"  method="post" name="stormcenter" action="php/thanks.php">
+		<fieldset>
+			<legend> Personal Information </legend>
+		    <span class="info">Full Name:</span><br><input class="info" name="fullname" type="text" value="" placeholder="Enter Full Name" pattern="[a-zA-Z -._]{5,99}" required><br>
+		    <span class="info">Email:</span><br><input class="info" name="email" type="email" value="" placeholder="Enter Email" required><br>
+		    <span class="info">Phone:</span><br><input class="info" name="phone" type="tel" value="" placeholder="Enter Phone Number" pattern="[0-9]{10}" required><br>
+		    <span class="info">Zip Code:</span><br><input class="info" name="zipcode" type="number" placeholder="Enter Zip Code" required>
+		</fieldset>
+		<fieldset>
+		    <legend>Storm Information</legend>
+		    <label class="info"> Storm Date:</label>
+		    <input class="sdate" name="sdate" type="date" required>
+		    <label class="info">Storm Type:</label>
+		    <input class="storminfo" type="text" name="stormlist" list="stormlist">
+		    <datalist id="stormlist">
+		        <option value="Flash Flood">
+		        <option value="Hail">
+		        <option value="Hurricane">
+		        <option value="Thunderstorm">
+		        <option value="Tornado">
+		    </datalist>
+
+
+
+		    <label class="info" for="rating"> Severity (1 to 10): </label>
+		    <input class="stinfo" type="range" id="rating" value="5" min="1" max="10" step="1"
+		    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		    <span id="ratingvalue">5</span>
+
+		    <br>
+		    <label class="info"> Storm Region: </label>
+		    <input class="storminfo" type="text" name="stormRegion" list="regions" placeholder="Enter Region">
+		    <datalist id="regions">
+		        <option value="Franklin">
+		        <option value="Greenville">
+		        <option value="Springfield">
+		    </datalist>
+		</fieldset>
+		<fieldset>
+		    <legend>Tell If You Are In Danger</legend>
+		    <br>
+
+
+		    <input class="stinfo" type="radio" name="UserInDanger" value="yes"> Yes<br>
+		    <input class="stinfo" type="radio" name="UserInDanger" value="maybe"> Maybe<br>
+		    <input class="stinfo" type="radio" name="UserInDanger" value="no"> No<br>
+		    <br>
+		    <textarea class="storminfo" rows="5" cols="50" name="comment" placeholder="Enter any additional information that you may have."></textarea>
+		</fieldset>
+		    <input type="submit" value="SUBMIT" class="submitBtn">
+    </form>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+ <h3>William McDermott</h3>
+ <p>rhettmcdermott@gmail.com</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Forecast On Demand | <span id="todaysdate"></span>
+    </section>
+  </footer>
+<script type="text/javascript" src="js/windchill.js"></script>
+<script type="text/javascript" src="js/currentdate.js"></script>
+<script type="text/javascript" src="js/stormseverity.js"></script>
+</body>
+</html>
