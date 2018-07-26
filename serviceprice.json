@@ -13,29 +13,29 @@
        "service" : "Full Service",
        "cost" : "$139"
     },
-        {
-          "service" : "Ultimate Advantage",
-          "cost" : "$229"
+      {
+       "service" : "Ultimate Advantage",
+       "cost" : "$229"
     },
-        {
-          "service" : "Bottom Bracket Fit (including frame preparation)",
-          "cost" : "$39"
+      {
+       "service" : "Bottom Bracket Fit (including frame preparation)",
+       "cost" : "$39"
     },
-        {
-          "service" : "Headset (including head tube inspection)",
-          "cost" : "$29"
+      {
+       "service" : "Headset (including head tube inspection)",
+       "cost" : "$29"
     },
-        {
-          "service" : "Gear Adjustment (Front & rear)",
-          "cost" : "$59"
+      {
+       "service" : "Gear Adjustment (Front & rear)",
+       "cost" : "$59"
     },
-        {
-          "service" : "Check and Tune",
-          "cost" : "$99"
+      {
+       "service" : "Check and Tune",
+       "cost" : "$99"
     },
-        {
-          "service" : "Replace Broken Spoke",
-          "cost" : "$79"
+      {
+       "service" : "Replace Broken Spoke",
+       "cost" : "$79"
     }
   ]
 }
