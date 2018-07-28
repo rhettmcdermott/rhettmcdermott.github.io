@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Franklin Page - Weather Forecast On Demand">
+    	<link rel="stylesheet" href="styles/normalize.css">
+    	<link rel="stylesheet" href="styles/tmsmain.css">
+		<link rel="stylesheet" href="styles/tmsmedium.css">
+		<link rel="stylesheet" href="styles/tmslarge.css">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<title>The Mountain Spoke - Where Mountain Biking Adventures Begin</title>
+	</head>
+	<body>
+
+
+
+
+	<header class="logo">
+  <img src="images/mblogo3.png" alt="icon">
+      <div class="bartext">
+       <h1>The Mountain Spoke</h1>
+     <h3 class="motto">"Where Mountain Biking Adventures Begins"</h3>
+</div>
+
+
+
+
+<script src="js/hamburgermenu.js"></script>
+
+</header>
+
+<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+<!--
+            <div class="photoFullWidth"> <img src="images/medium.jpg",
+    srcset="images/small.jpg 500w,
+            images/medium.jpg 900w,
+            images/large.jpg 2500w"
+    sizes="100vw"></div>
+-->
+
+
+
+<nav>
+ <ul class="navigation">
+
+ <!--
+ <li><a href="https://rhettmcdermott.github.io/weathersite.html">Home</a></li>
+ <li><a href="https://rhettmcdermott.github.io/franklin.html">Franklin</a></li>
+ <li><a href="https://rhettmcdermott.github.io/greenville.html">Greenville</a></li>
+ <li><a href="https://rhettmcdermott.github.io/springfield.html">Springfield</a></li>
+ <li><a href="https://rhettmcdermott.github.io/stormcenter.html">Storm Center</a></li>
+ <li><a href="https://rhettmcdermott.github.io/gallery.html">Gallery</a></li>
+ -->
+  <li><a href="biking.html" class="selected">Home</a></li>
+  <li><a href="tour.html">Tours</a></li>
+  <li><a href="Events.html">Events</a></li>
+  <li><a href="Sales.html">Sales</a></li>
+  <li><a href="Service.html">Service</a></li>
+ <li><a href="Contact.html">Contact</a></li>
+ </ul>
+</nav>
+
+
+
+<div class="w3-content w3-section" style="max-width:100%">
+  <h1 class="Titletext">Our Mountain Biking Adventures</h1>
+
+  <img class="mySlides w3-animate-fading" src="images/slide1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide5.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide6.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide7.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide8.jpg" style="width:100%">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+</script>
+<main>
+
+      <header2>
+
+      </header2>
+
+
+
+      <div class="startpageart">
+
+	  	              <h2>Mountain Biking Adventures!</h2>
+
+	        <p>
+	        Would you like to ride your mountain bike on super sweet trails in some of the most beautiful locations in the western US? Would you like fun, experienced and knowledgeable guides to show you the way on the trail, cook up incredible food at the end of the day, and teach you things you never knew about? You should join us on a Rim Tours Mountain Bike Adventure!
+
+Since 1985 Rim Tours has earned our reputation by offering the very best professionally guided mountain bike trips to Utah's Canyon country, Colorado's Rocky Mountains, Arizona's Grand Canyon and Sonoran Desert and Oregon's central Cascade Mountains. Our tours showcase the most beautiful and pristine backcountry locations in the Western United States and our experienced staff will ensure that your time spent with us is a vacation to remember. We have pioneered backcountry biking tours with your safety and enjoyment our highest priority. Our backcountry ethic assures minimal impact from our travels so others may return time and again to unspoiled wilderness.
+	        </p>
+
+
+</div>
+<section class="section1">
+      </section>
+
+    <script>
+
+
+
+
+    var header = document.querySelector('header2');
+    var section = document.querySelector('section');
+
+
+
+
+
+</script>
+
+
+
+
+  </main>
+
+  <footer>
+    <section class="contact">
+ <h3>William McDermott</h3>
+ <p>rhettmcdermott@gmail.com</p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Soke | <span id="todaysdate"></span>
+
+
+    </section>
+  </footer>
+<script src="js/currentdate.js"></script>
+</body>
+</html>

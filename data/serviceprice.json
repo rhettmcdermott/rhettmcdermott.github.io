@@ -1,0 +1,41 @@
+{
+ 
+  "services" : [
+    {
+      "service" : "Checkvvv and Tune",
+      "cost" : "$89"
+    },
+    {
+      "service" : "General Service (including de-grease)",
+      "cost" : "$19"
+    },
+     {
+       "service" : "Full Service",
+       "cost" : "$139"
+    },
+      {
+       "service" : "Ultimate Advantage",
+       "cost" : "$229"
+    },
+      {
+       "service" : "Bottom Bracket Fit (including frame preparation)",
+       "cost" : "$39"
+    },
+      {
+       "service" : "Headset (including head tube inspection)",
+       "cost" : "$29"
+    },
+      {
+       "service" : "Gear Adjustment (Front & rear)",
+       "cost" : "$59"
+    },
+      {
+       "service" : "Check and Tune",
+       "cost" : "$99"
+    },
+      {
+       "service" : "Replace Broken Spoke",
+       "cost" : "$79"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Franklin Page - Weather Forecast On Demand">
+    	<link rel="stylesheet" href="styles/normalize.css">
+    	<link rel="stylesheet" href="styles/tmsmain.css">
+		<link rel="stylesheet" href="styles/tmsmedium.css">
+		<link rel="stylesheet" href="styles/tmslarge.css">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<title>The Mountain Spoke | Events</title>
+	</head>
+	<body>
+
+
+	<header class="logo">
+  <img src="images/mblogo3.png" alt="icon">
+      <div class="bartext">
+       <h1>The Mountain Spoke</h1>
+     <h3 class="motto">"Where Mountain Biking Adventures Begin"</h3>
+</div>
+
+
+
+
+<script src="js/hamburgermenu.js"></script>
+
+</header>
+
+<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+
+<!--
+            <div class="photoFullWidth"> <img src="images/medium.jpg",
+    srcset="images/small.jpg 500w,
+            images/medium.jpg 900w,
+            images/large.jpg 2500w"
+    sizes="100vw"></div>
+-->
+
+
+
+<nav>
+ <ul class="navigation">
+
+ <!--
+ <li><a href="https://rhettmcdermott.github.io/weathersite.html">Home</a></li>
+ <li><a href="https://rhettmcdermott.github.io/franklin.html">Franklin</a></li>
+ <li><a href="https://rhettmcdermott.github.io/greenville.html">Greenville</a></li>
+ <li><a href="https://rhettmcdermott.github.io/springfield.html">Springfield</a></li>
+ <li><a href="https://rhettmcdermott.github.io/stormcenter.html">Storm Center</a></li>
+ <li><a href="https://rhettmcdermott.github.io/gallery.html">Gallery</a></li>
+ -->
+  <li><a href="biking.html">Home</a></li>
+  <li><a href="tour.html">Tours</a></li>
+  <li><a href="Events.html" class="selected">Events</a></li>
+  <li><a href="Sales.html">Sales</a></li>
+  <li><a href="Service.html">Service</a></li>
+ <li><a href="Contact.html">Contact</a></li>
+ </ul>
+</nav>
+
+  <main>
+
+<div class="gallery">
+
+ <figure>
+   <h1 class="Titletext">Cycle the Continental Divide Event</h1>
+
+					<h3>Date Oct. 8, 2016</h3>
+					<div class="advpricebox">
+						<p>Price: <br><span class="price">$525.00/person</span></p>
+					</div>
+					<div class="adventureimage">
+						<img src="images/Great_Divide_AaronTeasdale.jpg" alt="great divide image">
+					</div>
+
+					<div class="advdesc">
+<p>
+The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain.
+</p>
+</div>
+
+
+
+
+
+					<table>
+
+					  <tr>
+						<th>Trail Location</th>
+						<td>Banff, Alberta CA to Antelope Wells NM.</td>
+					  </tr>
+					  <tr>
+						<th>Trail Type</th>
+						<td>100% single track mountain bike trail.</td>
+					  </tr>
+					  <tr>
+						<th>Distance</th>
+						<td>2768 miles</td>
+					  </tr>
+					  <tr>
+						<th>Skill Level</th>
+						<td>Advanced Skills</td>
+					  </tr>
+					  <tr>
+						<th>Duration</th>
+						<td>1 Month</td>
+					  </tr>
+
+					  </table>
+</figure>
+
+
+  <figure>
+	<form id="Registration"  method="post" name="Registration" action="php/thanks.php">
+		<fieldset>
+			<legend> Registration </legend>
+		    <span class="info">Full Name:</span><br><input class="info" name="fullname" type="text" value="" placeholder="Enter Full Name" pattern="[a-zA-Z -._]{5,99}" required><br>
+		    <span class="info">Email:</span><br><input class="info" name="email" type="email" value="" placeholder="Enter Email" required><br>
+		    <span class="info">Phone:</span><br><input class="info" name="phone" type="tel" value="" placeholder="Enter Phone Number" pattern="[0-9]{10}" required><br>
+		    <span class="info">Date of Birth:</span><br>
+		    <input class="sdate" name="sdate" type="date" required>
+		    <br>
+			<span class="info">Home State or Country:</span><br><br>
+		    <textarea class="info" rows="1" cols="25" name="comment" placeholder="home state or country."></textarea>
+		    <br>
+		    <span class="info">Special Accommodations/Comments:</span><br><br>
+		    <textarea class="info" rows="5" cols="50" name="comment" placeholder="special accommodations/comments."></textarea>
+		</fieldset>
+
+		    <input type="submit" value="SUBMIT" class="submitBtn">
+    </form>
+
+    </figure>
+</div>
+
+
+  </main>
+
+  <footer>
+      <section class="contact">
+   <h3>William McDermott</h3>
+   <p>rhettmcdermott@gmail.com</p>
+      </section>
+      <section class="footer-bar">&copy;2018 | All Rights Reserved | The Mountain Soke | <span id="todaysdate"></span>
+
+
+      </section>
+    </footer>
+  <script src="js/currentdate.js"></script>
+  </body>
+</html>
